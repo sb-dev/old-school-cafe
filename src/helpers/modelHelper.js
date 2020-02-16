@@ -1,0 +1,10 @@
+export const generateId = (value) => value
+    .trim()
+    .toLowerCase()
+    .replace(/à|â|ä/g, "a")
+    .replace(/ç/g, "c")
+    .replace(/è|é|ê|ë/g, "e")
+    .replace(/î|ï/g, "i")
+    .replace(/ô|ö/g, "o")
+    .replace(/û|ü|ù/g, "u")
+    .replace(" ", "-")

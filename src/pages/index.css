@@ -1,0 +1,135 @@
+.grey-box {
+    border-radius: 12px;
+    background: #F9F9F6;
+}
+
+section {
+    margin-bottom: 96px;
+    font-size: 16px;
+}
+
+section .ant-col {
+    margin-top: 24px;
+}
+
+section h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 32px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+section h2 {
+    font-size: 18px;
+}
+
+section img {
+    border-radius: 12px;
+}
+
+section .grey-box {
+    padding: 24px;
+}
+
+section .grey-box h1 {
+    text-transform: uppercase;
+    border: none;
+}
+
+section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+section.hero .inner-header {
+    text-align: center;
+    width: 100%;
+}
+
+section.hero h1, section.hero h2 {
+    margin: 0;
+    font-family: Constan;
+}
+
+section.hero h1 {
+    font-size: 60px;
+    text-transform: none;
+    line-height: 60px;
+    border: none;
+}
+
+section.hero h2 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+section.hero p {
+    font-size: 18px;
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+section.about img {
+  width: 100%;
+}
+
+section.find-us .grey-box {
+    min-height: 400px;
+}
+
+section.find-us button {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+section.events .ant-col {
+    margin: 0;
+}
+
+section.events .ant-col {
+    margin-top: 24px;
+}
+
+section.events .ant-col:last-child {
+    border: 0;
+}
+
+section.events .event {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 20px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+section.events .event.recurring {
+  background: #F9F9F6;
+}
+
+section.events .event .details{
+  margin-left: 24px;
+}
+
+section.events .event .title {
+  font-size: 32px;
+  margin-bottom: 4px;
+  line-height: normal;
+}
+
+section.events .event .date {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section.events .event .date .day-number {
+  font-size: 24px;
+}
+
+section.gallery img {
+  width: 100%;
+}
