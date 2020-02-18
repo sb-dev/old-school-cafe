@@ -1,7 +1,7 @@
 ---
 templateKey: navbar
 logoImage:
-  image: /images/logo.png
+  image: /uploads/logo.png
   imageAlt: Old School Café
 menuItems:
   - label: à propos

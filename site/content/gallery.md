@@ -2,6 +2,6 @@
 templateKey: gallery
 title: photos
 images:
-  - image: /images/gastropub.jpg
+  - image: /uploads/gastropub.jpg
     imageAlt: Gatropub.
 ---

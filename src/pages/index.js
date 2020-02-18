@@ -38,13 +38,19 @@ const AboutTemplate = ({ data: { title, sections } }) => (
   <section id={ generateId(title) } className={'about'}>
     <h1><span className="number">N&deg;<sub>1</sub></span>&nbsp;{title}</h1>
     <Row gutter={32}>
-      {sections.map(({ content, image, imageAlt }) => (
+      {sections.map(({ content, image, imageAlt, file }) => (
         <>
           <Col xs={24} sm={24} md={8}>
             <img src={ image } alt={ imageAlt }/>
           </Col>
           <Col className="text" xs={24} sm={24} md={16}>
             <ReactMarkdown source={content} />
+            { file && <Button
+              type="dashed"
+              size={"large"}
+              onClick={() => window.open(file.filePath, '_blank')}>
+              { file.label }
+            </Button> }
           </Col>
         </>
       ))}
@@ -186,6 +192,10 @@ export const pageQuery = graphql`
               content
               image
               imageAlt
+              file {
+                label
+                filePath
+              }
             }
           }
         }
