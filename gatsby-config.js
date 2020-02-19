@@ -51,7 +51,12 @@ module.exports = {
         icon: `src/images/old-school-cafe-icon.png`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/preview-templates/cms.js`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -2,10 +2,10 @@ import "./header.css"
 
 import { Link } from "gatsby"
 import React from "react"
-import { Link as ScrollTo } from "react-scroll";
+import { Link as ScrollTo } from "react-scroll"
 import { generateId } from '../../helpers/modelHelper'
 
-export const Header = ({ navBarData }) => {
+export const HeaderTemplate = ({ navBarData: { logoImage, menuItems } }) => {
   const renderMenuItems = (menuSide) => menuItems
     .map((menuItem, index) => {
       return {
@@ -22,7 +22,6 @@ export const Header = ({ navBarData }) => {
       </li>
     ))
 
-  const { logoImage, menuItems } = navBarData.edges[0].node.frontmatter
   return (
     <header className="site-header container">
       <div className="left">
@@ -44,3 +43,7 @@ export const Header = ({ navBarData }) => {
     </header>
   )
 }
+
+export const Header = ({ navBarData }) => (
+  <HeaderTemplate navBarData={navBarData.edges[0].node.frontmatter} />
+)
