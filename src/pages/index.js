@@ -25,11 +25,11 @@ export const HeroTemplate = ({ data: { title, subtitle, image, altImage } }) => 
       <p>
         {subtitle}
       </p>
-      <Img
+      { image.childImageSharp ? <Img
         fluid={image.childImageSharp.fluid}
         alt={altImage}
         style={{margin: '50px 0px'}}
-      />
+      /> : <img src={ image } /> }
     </div>
   </section>
 )
