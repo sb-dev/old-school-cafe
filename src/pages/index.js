@@ -13,7 +13,7 @@ import SEO from "../components/seo"
 import { generateId } from '../helpers/modelHelper'
 import { graphql } from 'gatsby'
 
-const HeroTemplate = ({ data: { title, subtitle, image, altImage } }) => (
+export const HeroTemplate = ({ data: { title, subtitle, image, altImage } }) => (
   <section id="hero" className="hero container">
     <div className="inner-header">
       {title.split("-").length > 1 ?
@@ -34,7 +34,7 @@ const HeroTemplate = ({ data: { title, subtitle, image, altImage } }) => (
   </section>
 )
 
-const AboutTemplate = ({ data: { title, sections } }) => (
+export const AboutTemplate = ({ data: { title, sections } }) => (
   <section id={ generateId(title) } className={'about'}>
     <h1><span className="number">N&deg;<sub>1</sub></span>&nbsp;{title}</h1>
     <Row gutter={32}>
@@ -58,7 +58,7 @@ const AboutTemplate = ({ data: { title, sections } }) => (
   </section>
 )
 
-const FindUsTemplate = ({ data: { title, address, phone, hours, location: { latitude, longitude } } }) => (
+export const FindUsTemplate = ({ data: { title, address, phone, hours, location: { latitude, longitude } } }) => (
   <section id={ generateId(title) } className={'find-us'}>
     <h1><span className="number">N&deg;<sub>2</sub></span>&nbsp;{ title }</h1>
     <Row gutter={32}>
@@ -96,7 +96,7 @@ const FindUsTemplate = ({ data: { title, address, phone, hours, location: { lati
   </section>
 )
 
-const EventsTemplate = ({ data: { title, events } }) => (
+export const EventsTemplate = ({ data: { title, events } }) => (
   <section id={ generateId(title) } className={'events'}>
     <h1><span className="number">N&deg;<sub>3</sub></span>&nbsp;{ title }</h1>
     <Row gutter={32}>
@@ -134,7 +134,7 @@ const EventsTemplate = ({ data: { title, events } }) => (
   </section>
 )
 
-const GalleryTemplate = ({ data: { title, images } }) => (
+export const GalleryTemplate = ({ data: { title, images } }) => (
   <section id={ generateId(title) } className={'gallery'}>
     <h1><span className="number">N&deg;<sub>4</sub></span>&nbsp;{ title }</h1>
     <Row gutter={32}>

@@ -1,3 +1,5 @@
+import "../components/layout/layout.css"
+
 import { HeaderTemplate } from "../components/header"
 import React from "react"
 
