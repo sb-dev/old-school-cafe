@@ -43,7 +43,7 @@ sections:
     file:
       filePath: /uploads/menu.pdf
       label: notre menu
-    image: /uploads/gastropub.jpg
+    image: /uploads/received_216625773123803.jpeg
     imageAlt: 'Café Restaurant After-work '
 ---
 
