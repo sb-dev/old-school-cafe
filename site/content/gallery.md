@@ -8,5 +8,13 @@ images:
     imageAlt: Planche XXL
   - image: /uploads/IMG_20191112_202417.jpg
     imageAlt: Tartare de Bœuf Old School
+  - image: /uploads/received_239922667416288.jpeg
+    imageAlt: Plat du jour
+  - image: /uploads/received_914191779019684.jpeg
+    imageAlt: The restaurant
+  - image: /uploads/received_719443091927107.jpeg
+    imageAlt: Concert
+  - image: /uploads/gastropub.jpg
+    imageAlt: Entrée du jour
 ---
 
