@@ -1,7 +1,7 @@
 ---
 templateKey: hero
 title: 'Bienvenue - Dans notre établissement '
-subtitle: Nos ingredients sont saisonniers et proviennent de fournisseurs régionaux
+subtitle: Café- Restaurant- After work- Brunch
 image: /static/uploads/people.jpg
 imageAlt: Old Scool Café.
 ---
