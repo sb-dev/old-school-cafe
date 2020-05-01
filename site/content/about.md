@@ -20,7 +20,7 @@ sections:
 
 
       Vous pouvez organiser un After-Work avec vos collègues, de grandes tables
-      si prête bien!
+      s'y prêtent bien!
 
 
       Sans oublier les Planches apéros dont je ne vanterai pas les mérites, à
