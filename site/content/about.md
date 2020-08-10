@@ -6,8 +6,8 @@ sections:
       The Old Shool café  est de retour!!
 
 
-      Du mardi au samedi on vous accueille toute la journée de 10 h à minuit
-      dans un cadre chaleureux pour manger ou boire un verre!
+      Du mardi au samedi on vous accueille toute la journée 16h30 a minuit dans
+      un cadre chaleureux pour manger ou boire un verre!
 
 
       vous trouverez la carte ci-dessous, on vous attend, on est en forme et on
@@ -18,8 +18,7 @@ sections:
       emporter, et le manger tranquillement à la maison!
 
 
-      Le dimanche on vous accueille pour notre Summer Brunch, assiette Anglaise
-      à 11 euros et extra à 3,50 ;)
+      Le dimanche on vous accueille de 11h a 17h 
 
 
       A très vite,
