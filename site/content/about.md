@@ -3,11 +3,8 @@ templateKey: about
 title: à propos
 sections:
   - content: >-
-      The Old Shool café  est de retour!!
-
-
-      Du mardi au samedi on vous accueille toute la journée 16h30 a minuit dans
-      un cadre chaleureux pour manger ou boire un verre!
+      The Old School café vous accueille du mardi au samedi de 10 a minuit on
+      vous dans un cadre chaleureux pour manger ou boire un verre!
 
 
       vous trouverez la carte ci-dessous, on vous attend, on est en forme et on
@@ -18,7 +15,8 @@ sections:
       emporter, et le manger tranquillement à la maison!
 
 
-      Le dimanche on vous accueille de 11h a 17h 
+      Le dimanche on vous accueille de 11h à 16h pour notre fameux "Buffet
+      Brunch"
 
 
       A très vite,
@@ -26,7 +24,7 @@ sections:
 
       La Team Old School!
     file:
-      filePath: /uploads/A4 carte JUIN.pdf
+      filePath: /uploads/carte septembre.pdf
       label: notre menu
     image: /uploads/80903016_920574658344598_2700882993184336679_n.jpg
     imageAlt: 'Café Restaurant After-work '
