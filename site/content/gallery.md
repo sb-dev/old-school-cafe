@@ -18,5 +18,7 @@ images:
     imageAlt: Entrée du jour
   - image: /uploads/IMG_20200910_184843.png
     imageAlt: Pulled Pork Burger
+  - image: /uploads/IMG_20200910_184820.png
+    imageAlt: 'G.O.A.T Burger '
 ---
 
