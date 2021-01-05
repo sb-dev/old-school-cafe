@@ -2,25 +2,12 @@
 templateKey: about
 title: à propos
 sections:
-  - content: >-
-      The Old School café vous accueille du mardi au samedi de 10 a minuit on
-      vous dans un cadre chaleureux pour manger ou boire un verre!
+  - content: |-
+      The Old School café prend une petite pause. Hâte de vous retrouver!
 
-
-      vous trouverez la carte ci-dessous, on vous attend, on est en forme et on
-      a hâte de vous revoir =)
-
-
-      Vous pouvez aussi nous appeler pour commander un de nos bon plats à
-      emporter, et le manger tranquillement à la maison!
-
-
-      Le dimanche on vous accueille de 11h à 16h pour notre fameux "Buffet
-      Brunch"
-
+      Prenez soin de vous.
 
       A très vite,
-
 
       La Team Old School!
     file:
