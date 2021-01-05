@@ -16,5 +16,7 @@ images:
     imageAlt: Concert
   - image: /uploads/gastropub.jpg
     imageAlt: Entrée du jour
+  - image: /uploads/IMG_20200910_184843.png
+    imageAlt: Pulled Pork Burger
 ---
 
