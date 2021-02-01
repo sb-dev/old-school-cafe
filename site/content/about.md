@@ -16,7 +16,7 @@ sections:
 
       La Team Old School!
     file:
-      filePath: /uploads/IMG_20200910_184843.png
+      filePath: /uploads/Carte a emporter 2021.pdf
       label: notre menu
     image: /uploads/80903016_920574658344598_2700882993184336679_n.jpg
     imageAlt: 'Café Restaurant After-work '
