@@ -42,12 +42,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `old-school-cafe`,
+        short_name: `old-school-cafe`,
         start_url: `/`,
         background_color: `#f1c300`,
         theme_color: `#f1c300`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/old-school-cafe-icon.png`,
       },
     },

@@ -29,7 +29,7 @@ export const HeroTemplate = ({ data: { title, subtitle, image, altImage } }) => 
         fluid={image.childImageSharp.fluid}
         alt={altImage}
         style={{margin: '50px 0px'}}
-      /> : <img src={ image } /> }
+      /> : <img src={ image } alt="Old school cafe"/> }
     </div>
   </section>
 )
@@ -38,8 +38,8 @@ export const AboutTemplate = ({ data: { title, sections } }) => (
   <section id={ generateId(title) } className={'about'}>
     <h1><span className="number">N&deg;<sub>1</sub></span>&nbsp;{title}</h1>
     <Row gutter={32}>
-      {sections.map(({ content, image, imageAlt, file }) => (
-        <>
+      {sections.map(({ content, image, imageAlt, file }, index) => (
+        <React.Fragment key={index}>
           <Col xs={24} sm={24} md={8}>
             <img src={ image } alt={ imageAlt }/>
           </Col>
@@ -52,7 +52,7 @@ export const AboutTemplate = ({ data: { title, sections } }) => (
               { file.label }
             </Button> }
           </Col>
-        </>
+        </React.Fragment>
       ))}
     </Row>
   </section>
@@ -100,8 +100,8 @@ export const EventsTemplate = ({ data: { title, events } }) => (
   <section id={ generateId(title) } className={'events'}>
     <h1><span className="number">N&deg;<sub>3</sub></span>&nbsp;{ title }</h1>
     <Row gutter={32}>
-      {events.map(({ title, facebookLink, type, dayOfWeek, dayNumber, month, from, to }) => (
-        <Col xs={24}>
+      {events.map(({ title, facebookLink, type, dayOfWeek, dayNumber, month, from, to }, index) => (
+        <Col xs={24} key={index} >
           <div className={`event ${type === 'recurring' ? 'recurring' : ''}`}>
             <div className="date">
               <div className="day-of-week">{ dayOfWeek }</div>
@@ -138,8 +138,8 @@ export const GalleryTemplate = ({ data: { title, images } }) => (
   <section id={ generateId(title) } className={'gallery'}>
     <h1><span className="number">N&deg;<sub>4</sub></span>&nbsp;{ title }</h1>
     <Row gutter={32}>
-      {images.map(({ image, imageAlt }) => (
-        <Col xs={24} sm={24} md={12}>
+      {images.map(({ image, imageAlt }, index) => (
+        <Col xs={24} sm={24} md={12} key={index} >
           <img src={ image } alt={ imageAlt } />
         </Col>
       ))}
