@@ -2,21 +2,16 @@
 templateKey: about
 title: à propos
 sections:
-  - content: >-
-      L'équipe du Old School vous propose Le concept "Old School Burger" en
-      livraison via Uber Eat en attendant de pouvoir vous accueillir de
-      nouveaux.
+  - content: |-
+      The Old School café est ouvert 7/7 de 10h30 à 21h
 
-
-      Merci pour votre soutien inconditionnel!
-
+      Une grande terrasse au soleil vous attend !
 
       Prenez soin de vous!
 
-
       La Team Old School!
     file:
-      filePath: /uploads/carte-osb-0421.pdf
+      filePath: /uploads/copie-de-copie-de-copie-de-la-carte-2-.pdf
       label: notre menu
     image: /uploads/80903016_920574658344598_2700882993184336679_n.jpg
     imageAlt: "Café Restaurant After-work "
