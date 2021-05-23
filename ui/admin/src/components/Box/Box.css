@@ -1,0 +1,30 @@
+.box {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0;
+    margin: 24px 0;
+}
+
+.box .app-logo {
+    margin: 0 auto;
+}
+
+.box p:first-of-type {
+    margin-top: 32px;
+}
+
+.inner-box {
+    padding: 32px;
+}
+
+.box .form-button {
+    width: 100%;
+}
+
+.inner-box .ant-form .ant-row.ant-form-item:last-child {
+    margin-bottom: 0;
+}

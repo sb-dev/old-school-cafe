@@ -1,0 +1,19 @@
+#root, .ant-layout-content, .inner-content {
+  height: 100%;
+}
+#root {
+  background-color: #FAFBFC;
+}
+
+.login-box .login-form {
+  max-width: 300px;
+}
+.login-box .login-form-forgot {
+  float: right;
+}
+.login-box .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+.login-box .login-form-button {
+  width: 100%;
+}

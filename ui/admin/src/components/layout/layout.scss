@@ -1,0 +1,186 @@
+@import "../../theme/utils.scss";
+
+.admin {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  h1 {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+
+    .icon {
+      float: right;
+
+      svg {
+        height: 24px;
+      }
+    }
+  }
+
+  .ant-layout-header {
+    h1 {
+      display: inline-block;
+      border: 0;
+      margin: 0;
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  .container {
+    max-height: none;
+    .inner-container {
+      padding: 0;
+    }
+  }
+
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f0ac41;
+    }
+  }
+
+  .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+  .touch-nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+
+    display: flex;
+    height: 64px;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    a {
+      height: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      flex: 1 0 auto;
+      align-items: center;
+
+      .inner-link {
+        display: flex;
+        margin: 0 auto;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: rgb(189, 189, 189);
+        }
+      }
+
+      .inner-link.active,
+      &:hover {
+        svg {
+          fill: #f0ac41;
+        }
+      }
+    }
+  }
+}
+
+.ant-drawer.main-menu {
+  .ant-drawer-content-wrapper {
+    width: 60% !important;
+  }
+
+  .ant-drawer-body {
+    padding: 0;
+  }
+
+  .ant-divider-horizontal {
+    margin: 12px 0;
+  }
+
+  .user-info {
+    padding: 24px;
+    padding-bottom: 12px;
+
+    .ant-avatar {
+      margin-bottom: 24px;
+    }
+
+    .name {
+      line-height: 1em;
+      font-size: 1.5em;
+    }
+
+    .email {
+      color: #838383;
+    }
+  }
+}
+
+@include for-tablet-down {
+  .ant-layout-header {
+    border-bottom: 1px solid #ebebeb;
+
+    .trigger.desktop {
+      display: none;
+    }
+  }
+
+  .ant-layout.admin {
+    aside {
+      display: none;
+    }
+
+    main.ant-layout-content {
+      margin: 0 !important;
+      height: calc(100% - 128px);
+      flex: none;
+      padding: 0 8px 18px 8px !important;
+    }
+  }
+
+  .ant-drawer .ant-drawer-content-wrapper {
+    width: 100% !important;
+
+    h1 {
+      width: calc(100% - 48px) !important;
+    }
+  }
+}
+
+@include for-desktop-up {
+  .ant-layout-header {
+    .trigger.mobile {
+      display: none;
+    }
+  }
+
+  .admin nav.touch-nav {
+    display: none;
+  }
+
+  .admin .ant-layout-header {
+    h1 {
+      display: none;
+    }
+  }
+}

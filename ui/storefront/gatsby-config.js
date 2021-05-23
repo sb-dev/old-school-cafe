@@ -51,12 +51,12 @@ module.exports = {
         icon: `src/images/old-school-cafe-icon.png`,
       },
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/preview-templates/cms.js`,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-netlify-cms",
+    //   options: {
+    //     modulePath: `${__dirname}/src/preview-templates/cms.js`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

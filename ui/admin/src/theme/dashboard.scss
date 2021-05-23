@@ -1,0 +1,71 @@
+@import "../theme/utils.scss";
+
+.Dashboard {
+  height: 100%;
+
+  .inner-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    .Food {
+      height: calc(100% - 111px);
+      position: relative;
+      display: inline-block;
+      .FoodItems {
+        padding: 0;
+        overflow-x: scroll;
+        max-height: calc(100% - 56px);
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.action-button {
+  position: fixed;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ac41;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 5px 30px;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0;
+  outline: none;
+  border-style: none;
+  transition: background-color 0.2s ease 0s, fill 0.2s ease 0s;
+  border-radius: 50%;
+  bottom: 214px;
+  right: 20px;
+  z-index: 5;
+
+  svg {
+    fill: white;
+  }
+}
+
+@include for-tablet-down {
+  .Dashboard .inner-container .Food {
+    height: calc(100% - 111px);
+
+    h1 {
+      display: none;
+    }
+
+    .FoodItems {
+      max-height: 100%;
+      padding-bottom: 84px;
+    }
+
+    .action-button {
+      display: flex;
+    }
+  }
+}
