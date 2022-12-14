@@ -7,7 +7,10 @@ location:
   longitude: -1.697716
 phone: +33 2 56 01 37 74
 hours:
-  - from: 18:00
-    label: Livraisons, du Mardi au Dimanche
-    to: 22:00
+  - label: Dimanche à Mercredi
+    from: 10:30
+    to: 0:00
+  - label: Jeudi à Samedi
+    from: 10:30
+    to: 1:00
 ---
