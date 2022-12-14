@@ -1,8 +1,7 @@
 ---
 templateKey: hero
-title: 'Bienvenue - Dans notre établissement '
+title: "Bienvenue - Dans notre établissement "
 subtitle: Café- Restaurant- After work- Brunch
-image: /static/uploads/people.jpg
+image: /uploads/logo.png
 imageAlt: Old Scool Café.
 ---
-
