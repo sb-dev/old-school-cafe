@@ -20,7 +20,7 @@ sections:
 
        La Team Old School!
     file:
-      filePath: /uploads/carte-osc-092022.zip
+      filePath: /uploads/carte-osc-092022.pdf
       label: notre menu
     image: /uploads/80903016_920574658344598_2700882993184336679_n.jpg
     imageAlt: "Café Restaurant After-work "
