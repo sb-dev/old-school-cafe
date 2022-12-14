@@ -83,5 +83,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# infrastructure secrets
+env.yml
+
 # Mac files
 .DS_Store
+.idea

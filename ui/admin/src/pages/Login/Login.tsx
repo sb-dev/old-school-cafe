@@ -4,20 +4,27 @@ import {Button, Checkbox, Form, Input, Layout} from "antd";
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import React, {useState} from "react";
 
+import Auth from "../../api";
 import Box from "../../components/Box/Box";
 import {Link} from "react-router-dom";
 
-// import {Auth} from "aws-amplify";
-
-
 const { Content } = Layout;
 
-function Login() {
+function Login({ userHasAuthenticated, history }: any) {
     const [isLoading, setIsLoading] = useState(false);
 
-    async function onFinish(values: any) {
-        console.log('Received values of form: ', values);
+    async function onFinish({ email, password }: any) {
         setIsLoading(true);
+
+        const result = await Auth.signIn(email, password);
+        console.log('result', result);
+        if (result) {
+          userHasAuthenticated(true);
+          history.push("/");
+        } else {
+          setIsLoading(false);
+          console.log('Authentication failed...');
+        }
 
         // props.form.validateFields(async (err: any, values: any) => {
         //     if (!err) {
