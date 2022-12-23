@@ -8,9 +8,9 @@ location:
 phone: +33 2 56 01 37 74
 hours:
   - label: Dimanche à Mercredi
-    from: 10:30
-    to: 0:00
+    from: '10:30'
+    to: '0:00'
   - label: Jeudi à Samedi
-    from: 10:30
-    to: 1:00
+    from: '10:30'
+    to: '1:00'
 ---
