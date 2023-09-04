@@ -16,6 +16,9 @@ sections:
       Le Dimanche venez vous régaler au Buffet Brunch à Volonté à 24.90€ pour finir le week-end en beauté , boissons chaudes et jus inclus.
 
 
+      U﻿n séminaire ? Un mariage ? Rendez-vous sur [ici](https://oldschoolevent.com/) pour découvrir nos prestations traiteur et obtenir un devis !
+
+
       Au plaisir de vous accueillir,
 
        La Team Old School!
