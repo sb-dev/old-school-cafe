@@ -6,6 +6,7 @@
   "author": "Samir Benzenine <samir@oaktreetech.ltd>",
   "dependencies": {
     "antd": "^3.26.9",
+    "caniuse-lite": "^1.0.30001753",
     "gatsby": "^2.32.8",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
