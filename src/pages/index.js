@@ -45,12 +45,6 @@ export const AboutTemplate = ({ data: { title, sections } }) => (
           </Col>
           <Col className="text" xs={24} sm={24} md={16}>
             <ReactMarkdown source={content} />
-            { file && <Button
-              type="dashed"
-              size={"large"}
-              onClick={() => window.open(file.filePath, '_blank')}>
-              { file.label }
-            </Button> }
           </Col>
         </React.Fragment>
       ))}

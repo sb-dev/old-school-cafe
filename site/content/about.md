@@ -3,8 +3,8 @@ templateKey: about
 title: à propos
 sections:
   - content: >-
-      The Old School café est ouvert 7/7 de 10h30  à minuit du dimanche au
-      mercredi, et du jeudi au samedi de 10h30 à 1h du matin.
+      The Old School café est ouvert de 10h30 à minuit du mardi au
+      samedi, et le dimanche de 10h30 à 18h.
 
 
       Une grande terrasse couverte, une ambiance chaleureuse et cosy à l'intérieur, on peut y boire un verre et manger une planche!
