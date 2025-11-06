@@ -45,12 +45,6 @@ export const AboutTemplate = ({ data: { title, sections } }) => (
           </Col>
           <Col className="text" xs={24} sm={24} md={16}>
             <ReactMarkdown source={content} />
-            { file && <Button
-              type="dashed"
-              size={"large"}
-              onClick={() => window.open(file.filePath, '_blank')}>
-              { file.label }
-            </Button> }
           </Col>
         </React.Fragment>
       ))}
@@ -147,18 +141,32 @@ export const GalleryTemplate = ({ data: { title, images } }) => (
   </section>
 )
 
-const HomePage = ({ data }) => (
-  <Layout navbarData={ data.navbarData }>
-    <SEO />
+const HomePage = ({ data }) => {
+  const heroFrontmatter = data.heroData.edges[0].node.frontmatter
+  const imageFileName = heroFrontmatter.image?.split('/').pop()
+  
+  const heroImageFile = data.allUploadFiles?.edges?.find(
+    edge => edge.node.base === imageFileName || edge.node.name === imageFileName
+  )?.node
+  
+  const heroData = {
+    ...heroFrontmatter,
+    image: heroImageFile?.childImageSharp ? heroImageFile : heroFrontmatter.image
+  }
+  
+  return (
+    <Layout navbarData={ data.navbarData }>
+      <SEO />
 
-    <HeroTemplate data={ data.heroData.edges[0].node.frontmatter } />
-    <AboutTemplate data={ data.aboutData.edges[0].node.frontmatter } />
-    <FindUsTemplate data={ data.findUsData.edges[0].node.frontmatter } />
-    <EventsTemplate data={ data.eventsData.edges[0].node.frontmatter } />
-    <GalleryTemplate data={ data.galleryData.edges[0].node.frontmatter } />
+      <HeroTemplate data={ heroData } />
+      <AboutTemplate data={ data.aboutData.edges[0].node.frontmatter } />
+      <FindUsTemplate data={ data.findUsData.edges[0].node.frontmatter } />
+      <EventsTemplate data={ data.eventsData.edges[0].node.frontmatter } />
+      <GalleryTemplate data={ data.galleryData.edges[0].node.frontmatter } />
 
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default HomePage
 
@@ -172,12 +180,24 @@ export const pageQuery = graphql`
             title
             subtitle
             imageAlt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+            image
+          }
+        }
+      }
+    }
+    allUploadFiles: allFile(
+      filter: { 
+        absolutePath: { regex: "/static/uploads/" }, 
+        extension: { in: ["jpg", "jpeg", "png", "gif", "webp"] } 
+      }
+    ) {
+      edges {
+        node {
+          name
+          base
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

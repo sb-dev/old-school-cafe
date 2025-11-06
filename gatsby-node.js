@@ -4,4 +4,21 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+
+  const typeDefs = `
+    type MarkdownRemarkFrontmatterEvents {
+      title: String
+      facebookLink: String
+      type: String
+      dayOfWeek: String
+      dayNumber: String
+      month: String
+      from: String
+      to: String
+    }
+  `
+
+  createTypes(typeDefs)
+}
